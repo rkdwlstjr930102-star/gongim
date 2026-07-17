@@ -4,36 +4,112 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>카센터 공임 조회</title>
+
 <style>
 body{
-    font-family: Arial, sans-serif;
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:30px;
-}
-.box{
-    background:#222;
+    margin:0;
     padding:20px;
-    border-radius:10px;
-    max-width:400px;
+    background:#121212;
+    font-family:Arial,sans-serif;
+    color:white;
+}
+
+.container{
+    max-width:500px;
     margin:auto;
 }
-h1{color:#00c853;}
+
+.card{
+    background:#1f1f1f;
+    padding:20px;
+    border-radius:15px;
+}
+
+h1{
+    text-align:center;
+    color:#00d26a;
+}
+
+input,select{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.result{
+    background:#2b2b2b;
+    padding:15px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.price{
+    font-size:32px;
+    color:#00ff7b;
+    font-weight:bold;
+}
 </style>
+
 </head>
+
 <body>
 
-<div class="box">
+<div class="container">
+
+<div class="card">
+
 <h1>🚗 카센터 공임 조회</h1>
 
-<p>브랜드 : BMW</p>
-<p>차종 : X3</p>
-<p>작업 : 터보교환</p>
+<input type="text" placeholder="검색 (예: 터보교환)">
 
-<h2>공임 : 450,000원</h2>
+<label>브랜드</label>
+<select>
+<option>선택</option>
+<option>BMW</option>
+<option>현대</option>
+<option>기아</option>
+<option>벤츠</option>
+</select>
 
-<p>메모 : 터보 탈거 시 배기라인 분리</p>
+<label>차종</label>
+<select>
+<option>선택</option>
+</select>
+
+<label>연식</label>
+<select>
+<option>선택</option>
+</select>
+
+<label>엔진</label>
+<select>
+<option>선택</option>
+</select>
+
+<label>작업</label>
+<select>
+<option>선택</option>
+</select>
+
+<div class="result">
+
+<h2>💰 공임</h2>
+
+<div class="price">- 원</div>
+
+<hr>
+
+<p>⏱ 작업시간 : -</p>
+
+<p>📝 메모 : -</p>
+
+</div>
+
+</div>
 
 </div>
 
